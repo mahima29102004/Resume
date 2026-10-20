@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahima Kumari Purimetla | Resume</title>
+  <style>
+    :root {
+      --ink: #202b3c;
+      --muted: #526174;
+      --accent: #174a7c;
+      --line: #d7e0e8;
+      --paper: #ffffff;
+      --soft: #f3f7fb;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #e9eef4;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.5pt;
+      line-height: 1.45;
+    }
+    .resume {
+      max-width: 900px;
+      margin: 28px auto;
+      padding: 38px 48px;
+      background: var(--paper);
+      box-shadow: 0 5px 24px rgba(22, 39, 58, 0.12);
+    }
+    header {
+      text-align: center;
+      padding-bottom: 18px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 20px;
+    }
+    h1 {
+      margin: 0 0 5px;
+      color: var(--accent);
+      font-size: 25pt;
+      letter-spacing: 0.4px;
+      line-height: 1.2;
+    }
+    .headline {
+      margin: 0 0 7px;
+      font-size: 11.5pt;
+      font-weight: bold;
+    }
+    .contact {
+      margin: 3px 0;
+      color: var(--muted);
+      overflow-wrap: anywhere;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    section { margin: 18px 0; }
+    h2 {
+      margin: 0 0 9px;
+      padding-bottom: 5px;
+      color: var(--accent);
+      font-size: 12pt;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--line);
+    }
+    p { margin: 5px 0; }
+    .entry { margin: 0 0 11px; }
+    .entry-head {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+    .entry-title { font-weight: bold; }
+    .date { color: var(--muted); white-space: nowrap; }
+    .subtext { color: var(--muted); }
+    ul { margin: 5px 0 8px 19px; padding: 0; }
+    li { margin: 3px 0; }
+    .skills {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 7px 14px;
+    }
+    .skill-label { font-weight: bold; }
+    .project-title { font-weight: bold; }
+    .technologies { margin-top: 7px; color: var(--muted); }
+    @media (max-width: 650px) {
+      .resume { margin: 0; padding: 25px 20px; }
+      h1 { font-size: 21pt; }
+      .skills { grid-template-columns: 1fr; gap: 2px; }
+      .skill-label { margin-top: 5px; }
+    }
+    @media print {
+      @page { size: A4; margin: 13mm; }
+      body { background: white; font-size: 9.5pt; }
+      .resume {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+      }
+      header { margin-bottom: 14px; padding-bottom: 12px; }
+      section { margin: 13px 0; }
+      h2 { break-after: avoid; }
+      .entry, li { break-inside: avoid; }
+      a { color: inherit; }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume">
+    <header>
+      <h1>MAHIMA KUMARI PURIMETLA</h1>
+      <p class="headline">Data Science Graduate | Deep Learning | Healthcare AI</p>
+      <p class="contact">Madhapur, Hyderabad | +91 7671855521 | <a href="mailto:mahimapurimetla@gmail.com">mahimapurimetla@gmail.com</a></p>
+      <p class="contact">
+        <a href="#" aria-label="LinkedIn profile">LinkedIn</a> |
+        <a href="#" aria-label="GitHub profile">GitHub</a> |
+        <a href="#" aria-label="Portfolio website">Portfolio</a>
+      </p>
+    </header>
+
+    <section>
+      <h2>Profile</h2>
+      <p>Computer Science graduate specializing in Data Science, with project experience in deep learning, computer vision, and healthcare AI. Familiar with Python, SQL, data preprocessing, model training, and evaluation. Developed a mini project comparing MLP and MobileNetV2 approaches for breast cancer detection, alongside small Python GUI applications. Interested in applying analytical and machine learning skills to practical AI-driven solutions.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">B.Tech – Computer Science and Engineering (Data Science)</span>
+          <span class="date">2023–2026</span>
+        </div>
+        <p>R.V.R. &amp; J.C. College of Engineering <span class="subtext">| CGPA: 7.84</span></p>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Diploma – Computer Engineering (CME)</span>
+          <span class="date">2020–2023</span>
+        </div>
+        <p>SUVR &amp; SR GPW, Ethamukkala <span class="subtext">| 78.12%</span></p>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Secondary School Certificate (SSC)</span>
+          <span class="date">2019–2020</span>
+        </div>
+        <p>ZP High School, Pernamitta <span class="subtext">| 95%</span></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills">
+        <div class="skill-label">Languages</div><div>Python, Data Structures and Algorithms (DSA)</div>
+        <div class="skill-label">Database</div><div>SQL</div>
+        <div class="skill-label">Data Science</div><div>Pandas, NumPy, Matplotlib</div>
+        <div class="skill-label">Deep Learning</div><div>TensorFlow/Keras, MLP, MobileNetV2, Transfer Learning, CNN fundamentals</div>
+        <div class="skill-label">Visualization</div><div>Tableau, Power BI, Microsoft Excel</div>
+        <div class="skill-label">Web Technologies</div><div>HTML</div>
+        <div class="skill-label">Tools</div><div>Jupyter Notebook, Git, GitHub</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="entry">
+        <p class="project-title">Deep Learning Approaches to Breast Cancer Detection: Comparing MLP and MobileNetV2</p>
+        <ul>
+          <li>Developed a deep learning-based breast cancer detection project using Multilayer Perceptron (MLP) and MobileNetV2 models.</li>
+          <li>Prepared data by handling missing values, applying feature scaling, and resizing images for model input.</li>
+          <li>Applied transfer learning with MobileNetV2 for medical image classification and trained models using Python and deep learning frameworks.</li>
+          <li>Evaluated model performance using accuracy and Area Under the Curve (AUC), and compared structured-data and image-based approaches.</li>
+          <li>Achieved measurable improvement in classification accuracy using AUC-ROC evaluation metrics.</li>
+          <li>Demonstrated real-world applicability of computer vision in healthcare diagnostics.</li>
+        </ul>
+        <p class="technologies"><strong>Technologies:</strong> Python, TensorFlow/Keras, OpenCV, NumPy, Matplotlib, MobileNetV2</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Mini Game Project</h2>
+      <ul>
+        <li><strong>Rock Paper Scissors:</strong> Created a GUI game with a randomized computer choice and immediate result display.</li>
+        <li><strong>To-Do List App:</strong> Built a task manager with add/delete functionality, a Listbox interface, and input-validation alerts.</li>
+        <li><strong>Quiz Game:</strong> Implemented a four-question quiz with score tracking, case-insensitive answer matching, and a result popup.</li>
+        <li><strong>Calculator:</strong> Designed a grid-based calculator supporting addition, subtraction, multiplication, and division with error handling.</li>
+        <li><strong>Tic Tac Toe:</strong> Developed a two-player game with turn switching and automatic winner/tie detection.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Internships</h2>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">AWS AI/ML Virtual Internship – AICTE</span>
+          <span class="date">Apr–Jun 2025</span>
+        </div>
+        <p>Gained foundational exposure to machine learning workflows and model development practices.</p>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">Android Developer Virtual Internship – AICTE</span>
+          <span class="date">Jul–Sep 2024</span>
+        </div>
+        <p>Developed understanding of mobile application architecture and Android development lifecycle.</p>
+      </div>
+      <div class="entry">
+        <div class="entry-head">
+          <span class="entry-title">AI/ML Virtual Internship – AICTE</span>
+          <span class="date">Apr–Jun 2024</span>
+        </div>
+        <p>Gained foundational exposure to Artificial Intelligence and machine learning workflows.</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Project Management for Managers – NPTEL, 12-week course (Jul–Oct 2025)</li>
+        <li>Psychology of Learning – NPTEL, 12-week course (Jul–Oct 2025)</li>
+        <li>Prompt Engineering for Everyone – IBM SkillsNetwork / Cognitive Class (Feb 2025)</li>
+        <li>Introduction to Internet of Things – NPTEL, 12-week course (Jul–Oct 2024)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Achievement &amp; Volunteering</h2>
+      <p><strong>Volunteer – National Space Day 2024</strong></p>
+      <p>Supported the National Space Day celebration organized by Satish Dhawan Space Centre, ISRO, at R.V.R. &amp; J.C. College of Engineering.</p>
+    </section>
+  </main>
+</body>
+</html>
